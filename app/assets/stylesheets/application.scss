@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+#task-list {
+  border: none;
+}
+
+#task-list > p {
+  padding-bottom: 50px;
+}

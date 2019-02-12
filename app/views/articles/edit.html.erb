@@ -1,1 +1,15 @@
-<h1>Edit</h1>
+<div class="container">
+
+  <h1>Edit article</h1>
+
+  <div>
+  <%= form_for(@article, :html => {:class => "form-group"}) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title, :class => "form-control" %>
+      <%= f.label :content %>
+      <%= f.text_area :content, :class => "form-control" %>
+      <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+

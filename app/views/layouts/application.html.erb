@@ -7,15 +7,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
   <body>
 <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="../images/newslogo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        NewsPaper
+        <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-7133fd5ca2feec0c855fb428218dbd94.png" width="30" height="30" class="d-inline-block align-top" alt=""><%= link_to 'NewsPaper', articles_path, :id => "news-logo" %>
       </a>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><%= link_to 'New Artcile', new_article_path %></button>
     </nav>
 
     <%= yield %>

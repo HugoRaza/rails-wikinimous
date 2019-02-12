@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+
+
+<article>
+  <h1>
+     <%= @article.title %> <%= link_to '', article_path(@article), method: :delete, :id => "logo-size", :class => "far fa-trash-alt", data: { confirm: "Are you sure?" } %> <%= link_to '', edit_article_path, :id => "logo-size", :class => "fas fa-pencil-alt" %>
+  </h1>
+
+  <hr>
+  <p>Adipisci quis et recusandae et quae. Quidem delectus architecto. Voluptatem aut harum. Inventore delectus est numquam.</p>
+
+<p><img src="http://lorempixel.com/800/300/city/" alt="" /></p>
+
+
+<p><%= @article.content %></p>
+
+</article>
+
+
+      </div>
+    </div>
+  </div>

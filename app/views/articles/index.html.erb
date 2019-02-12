@@ -2,11 +2,14 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <% @articles.each do |article| %>
-        <h2>
-          <a><%= link_to article.title, article_path(article) %></a>
-        </h2>
-        <p> <%= article.content %> </p>
-      <% end %>
+        <div class="article">
+          <h2>
+            <a><%= link_to article.title, article_path(article), :id => "article-title" %></a>
+          </h2>
+          <p> <%= article.content %> </p>
+           </div>
+          <% end %>
+
     </div>
   </div>
 </div>
